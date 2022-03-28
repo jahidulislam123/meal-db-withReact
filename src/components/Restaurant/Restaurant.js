@@ -53,7 +53,7 @@ const Restaurant = () => {
         const exist = orders.find(m=>m.idMeal===meal.idMeal);
         if(exist){
 
-            const rest =orders .filter(m=>m.idMeal!==meal.id);
+            const rest =orders .filter(m=>m.idMeal!==meal.idMeal);
             exist.quantity=exist.quantity+1;
             newOrders=[...rest,exist];
 
