@@ -48,7 +48,21 @@ const Restaurant = () => {
 
 
     const handleAddToOrder =(meal)=>{
+        let newOrders=[];
         // console.log(order.strMeal);
+        const exist = orders.find(m=>m.idMeal===meal.idMeal);
+        if(exist){
+
+            const rest =orders .filter(m=>m.idMeal!==meal.id);
+            exist.quantity=exist.quantity+1;
+            newOrders=[...rest,exist];
+
+        }
+        else{
+            meal.quantity=1;
+            newOrders=[...orders,meal];
+
+        }
         const newOrder = [...orders,meal];
         setOrders(newOrder);
         addToDb(meal.idMeal);
