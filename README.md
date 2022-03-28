@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-## live site : https://clinquant-pasca-a83039.netlify.app/
+## live site : https://boisterous-kringle-6b188c.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
