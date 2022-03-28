@@ -1,7 +1,15 @@
 import React from 'react';
 
 const OrderList = (props) => {
+    
+
+
     const { orders } = props;
+    let count=0;
+
+    for(const meal of orders){
+        count=count+meal.quantity;
+    }
 
     
     return (
